@@ -14,7 +14,7 @@ process.on('uncaughtException', (error, origin) => {
     console.log(reason)
   })
 
-const Guest = require('Guest');
+const Guest = require('./guest');
 
 (async ()=>{
     await Guest();
