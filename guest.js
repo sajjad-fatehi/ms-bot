@@ -1,7 +1,7 @@
 require('dotenv').config()
 const puppeteer = require('puppeteer');
 
-const Guest = (async () => {
+const Guest = async () => {
   const MAX_CLIENTS = process.env.MAX_CLIENTS
   const URL = process.env.GUEST_URL
 
@@ -40,6 +40,6 @@ const Guest = (async () => {
       }
 
   }
-});
+};
 
 module.exports = Guest;
